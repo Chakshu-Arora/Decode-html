@@ -1,0 +1,882 @@
+body {
+	margin:  0;
+}
+.page-content {
+	width: 100%;
+	margin:  0 auto;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-o-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+}
+.form-v2-content  {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+}
+.form-v2-content .form-left {
+
+	position: relative;
+	width:50%;
+	height: 100%;
+	
+}
+
+.form-v2-content .form-left .text-1,
+.form-v2-content .form-left .text-2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #fff;
+}
+.form-v2-content .form-left .text-1 {
+	position: absolute;
+    left: 9%;
+    bottom: 15%;
+}
+.form-v2-content .form-left .text-2 {
+	position: absolute;
+    right: 8%;
+    bottom: 1.5%;
+}
+.form-v2-content .form-left .text-1 p {
+	font-size: 32px;
+	line-height: 1.67;
+}
+.form-v2-content .form-left .text-1 span {
+	font-size: 25px;
+	display: block;
+}
+.form-v2-content .form-left .text-2 p {
+	font-size: 18px;
+}
+.form-v2-content .form-left .text-2 span {
+	font-size: 35px;
+	padding-right: 9px;
+}
+.form-v2-content .form-detail {
+
+	height: 100%;
+	position: relative;
+    width: 40%;
+    left: 10%;
+}
+.form-v2-content .form-detail h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #333;
+	font-size: 28px;
+	position: relative;
+	padding: 6px 0 0;
+	margin-bottom: 25px;
+}
+.form-v2-content .form-row {
+    width: 100%;
+    position: relative;
+}
+.form-v2-content .form-detail label {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #666;
+	display: block;
+	margin-bottom: 11px;
+}
+.form-v2-content .form-detail .form-row label#valid {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #53c83c;
+}
+.form-v2-content .form-detail .form-row label#valid::after {
+	content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.form-v2-content .form-detail .form-row label.error {
+	padding-left: 0;
+	margin-left: 0;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    background: none;
+    color: red;
+}
+.form-v2-content .form-detail .form-row label.error::after {
+    content: "\f343";
+    font-family: "LineAwesome";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    right: 10px;
+    top: -31px;
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+}
+.form-v2-content .form-detail .input-text {
+	margin-bottom: 27px;
+}
+.form-v2-content .form-detail input {
+	  width: 70%;
+    padding: 14.5px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+.form-v2-content .form-detail .form-row input:focus {
+	border: 1px solid #53c83c;
+}
+.form-v2-content .form-detail input[type="radio"] {
+	outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+  	width: 20px;
+  	height: 20px;
+  	padding:  4px;
+  	background-clip: content-box;
+  	border: 1px solid #e5e5e5;
+  	background-color: #fff;
+  	border-radius: 50%;
+  	-o-border-radius: 50%;
+  	-ms-border-radius: 50%;
+  	-moz-border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	cursor: pointer;
+  	float: left;
+  	margin-top: 0;
+}
+.form-v2-content .form-detail .form-checkbox {
+	width: 80%;
+	margin-top: 45%;
+	position: relative;
+}
+.form-v2-content .form-detail .form-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+.form-v2-content .form-detail .form-checkbox .checkmark {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.form-v2-content .form-detail .form-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #385cb9;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+.form-v2-content .form-detail .form-checkbox input:checked ~ .checkmark::after {
+    display: block;
+}
+.form-v2-content .form-detail .form-checkbox p {
+    margin-left: 35px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.67;
+}
+.form-v2-content .form-detail .form-checkbox a {
+	font-weight: 500;
+	color: #385cb9;
+	text-decoration: underline;
+}
+.form-v2-content .form-detail .register {
+	background: #3b63ca;
+	border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	width: 160px;
+	border: none;
+	margin: 6px 0 50px 0px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+}
+.form-v2-content .form-detail .register:hover {
+	background: #3356b0;
+}
+.form-v2-content .form-detail .form-row-last input {
+	padding: 15.5px;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+  font-size: 14px;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+  font-size: 14px;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #999;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+	.form-v2-content {
+		flex-direction:  column;
+		-o-flex-direction:  column;
+		-ms-flex-direction:  column;
+		-moz-flex-direction:  column;
+		-webkit-flex-direction:  column;
+	}
+	.form-v2-content .form-left {
+		width: 100%;
+	}
+	.form-v2-content .form-left img {
+		width: 100%;
+		border-bottom-left-radius: 0px;
+	    border-top-right-radius: 15px;
+	}
+	.form-v2-content .form-detail {
+		padding: 30px 20px 30px 20px;
+	    width: auto;
+	}
+	.form-v2-content .form-detail .form-row input {
+		width: 95%;
+	}
+	.form-v2-content .form-detail .form-checkbox {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 575px) {
+	.form-v2-content .form-detail .form-row input {
+		width: 89.5%;
+	}
+}
+
+.signup{
+	margin-top:15%;
+	font-family: Roboto;
+	font-size: 24px;
+	width: 328px;
+  height: 32px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color: #333333;
+}
+.Create-an-account-by {
+	width: 328px;
+	height: 20px;
+	opacity: 0.5;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: #333333;
+  }
+
+  
+/* Social Login Buttons */
+
+#loginHead {
+	position: absolute;
+	top: 510px;
+	left: 480px;
+	width: 500px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+
+}
+
+#orSeparator {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	height: 115px;
+	width: 60px;
+}
+
+#socialSeparatorTop {
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	height: 115px;
+	width: 3px;
+	background-color: #666;
+}
+
+#or {
+	position: absolute;
+	top: 115px;
+	left: 8px;
+	width: 40px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 22px;
+	line-height: 16px;
+	padding: 12px 0px;
+	border: 4px solid #666;
+	color: #666;
+	font-weight: bold;
+  text-align: center;
+}
+
+#socialSeparatorBottom {
+	position: absolute;
+	top: 160px;
+	left: 30px;
+	height: 130px;
+	width: 3px;
+	background-color: #666;
+}
+
+#socialLogin {
+	position: absolute;
+	top: 25%;
+	height: 300px;
+	width: 290px;
+}
+
+#socialHead {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	color: #666;
+	text-align: center;
+	font-size: 18px;
+
+}
+
+#socialNote {
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	width: 280px;
+	color: #666;
+	text-align: left;
+}
+
+#fblogin {
+    cursor: pointer;
+    display: block;
+    float: left;
+    top: 40px;
+    left: 0px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+	background-color: #3b5998;
+    border-top: 1px solid #3b5998;
+    border-right: 1px solid #3b5998;
+    border-bottom: 1px solid #3b5998;
+    border-left: 1px solid #3b5998;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 24px;
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    margin: 0px;
+    outline: rgb(68, 68, 68) none 0px;
+    overflow: hidden;
+	padding: 10px 18px;
+	width: 284px;
+	height: 50px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: #ffffff;
+
+}
+
+#fbname {
+    background-position: 0px 0px;
+    bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 1px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    top: 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50px;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.0784314) no-repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(68, 68, 68);
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    outline: rgb(68, 68, 68) none 0px;
+}
+
+#fbtext {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    text-align: left;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 150px;
+    align-self: flex-start;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal bold 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    margin: -12px 0px 0px 34px;
+    outline: rgb(255, 255, 255) none 0px;
+}
+
+#gpluslogin {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    float: left;
+    top: 110px;
+    left: 0px;
+    height: 50px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 290px;
+    background-color: #DD4B39;
+    background: -webkit-linear-gradient(#DD4B39,#D14836);
+    background: linear-gradient(#DD4B39,#D14836);
+    border-top: 1px solid rgb(230, 88, 88);
+    border-right: 1px solid rgb(227, 66, 66);
+    border-bottom: 1px solid rgb(227, 66, 66);
+    border-left: 1px solid rgb(227, 66, 66);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    outline: rgb(68, 68, 68) none 0px;
+    overflow: hidden;
+	padding: 10px 18px;
+	border-radius: 24px;
+}
+
+#gpname {
+    background-position: 0px 0px;
+    bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 1px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    top: 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50px;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.0666667) no-repeat scroll -43px -44px / auto padding-box border-box;
+    border: 0px none rgb(68, 68, 68);
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    outline: rgb(68, 68, 68) none 0px;
+}
+
+#gptext {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    text-align: left;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 133px;
+    align-self: flex-start;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal bold 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+
+	outline: rgb(255, 255, 255) none 0px;
+	margin: -12px 0px 0px 34px;
+}
+
+#twtrlogin {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    float: left;
+    top: 180px;
+    left: 0px;
+    height: 50px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 290px;
+    background-color: #3fa7d0;
+	background: -webkit-linear-gradient(#5fbee4, #2091bd);
+	background: linear-gradient(#5fbee4, #2091bd);
+	border: 1px solid #1c82a7;
+	border-top-color: #2091bd;
+	text-shadow: 0 1px #ffffff;
+	border-top: 1px solid rgb(32, 145, 189);
+    border-right: 1px solid rgb(28, 130, 167);
+    border-bottom: 1px solid rgb(28, 130, 167);
+    border-left: 1px solid rgb(28, 130, 167);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    outline: rgb(68, 68, 68) none 0px;
+    overflow: hidden;
+	padding: 10px 18px;
+	border-radius: 24px;
+}
+
+#twtrname {
+    background-position: 0px 0px;
+    bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 1px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    top: 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 50px;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.0666667) no-repeat scroll -43px -44px / auto padding-box border-box;
+    border: 0px none rgb(68, 68, 68);
+    font: normal normal 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    outline: rgb(68, 68, 68) none 0px;
+}
+
+#twtrtext {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    text-align: left;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 133px;
+    align-self: flex-start;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal bold 16px/normal 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+    margin: -12px 0px 0px 34px;
+    outline: rgb(255, 255, 255) none 0px;
+}
+.Linkedin {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+  }
+  .Google {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+  }
+  .terms{
+	width: 328px;
+	height: 40px;
+	font-family: Roboto;
+	font-size: 14px !important;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: justify;
+	color: #ee652a !important;
+  }
+  .privacy{
+	text-decoration: underline;
+	color: #ee652a !important;
+  }
+  .OR {
+	width: 328px;
+	height: 20px;
+	opacity: 0.25;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: center;
+	color: #333333;
+  }
+  
+  .btn {
+
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 328px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: #ee652a;
+  }
+  .extra{
+	  margin-bottom: 2%;
+  }
+  .I-already-have-an-ac {
+	width: 328px;
+	height: 20px;
+
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ee652a;
+  }
+  .logo{
+    box-sizing: inherit;
+    padding: 64px;
+  }
+  .bgimg{
+    background: url(../images/bg-image-sl.svg);
+    background-size: cover;
+    height: 1024px;;
+  }
+  .quote->q{
+    display: block;
+    margin-bottom: 32px;
+    font-family: Roboto,sans-serif;
+    font-size: 32px;
+    color: #333;
+    font-weight: 300;
+    line-height: 52px;
+  }
+  .top-left {
+    position: absolute;
+    top:28%;
+    left: 9%;
+  }
+  .Decode-really-gets {
+	  padding-left: 6%; 
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 52px;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+.desc1{
+	padding:10%;
+	    font-family: Roboto, sans-serif;
+		color:#333;
+}
+
+
+.desc2{
+	color:#999;
+}
+
+.Log-In {
+  padding-top:25%; 
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #333333;
+  padding-left: 28%;
+}
+.Content {
+
+  opacity: 0.50;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #333333;
+}
+.Startup-Investing-De {
+  width: 612px;
+  height: 170px;
+  font-family: Roboto;
+  font-size: 75px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.An-educated-approach {
+  width: 570px;
+  height: 42px;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #333333;
+  padding: 0% 5% 25%;
+}
+.btn-sign{
+  border: none;
+  color: #ee652a;
+  opacity: 0.5;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	border-radius: 24px;
+	border: solid 1px #ee652a;
+  background-color: #ffffff;
+}
+.btn-log{
+  border: none;
+  color: white;
+  opacity: 0.5;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	border-radius: 24px;
+	background-color: #ee652a;
+}
+.Small---Icon-Stretch {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  padding-left: 19%;
+}
